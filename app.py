@@ -6,6 +6,8 @@ import pickle
 import os
 import requests
 from dotenv import load_dotenv
+os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "0"
 
 # Load environment variables (for local testing)
 load_dotenv()
